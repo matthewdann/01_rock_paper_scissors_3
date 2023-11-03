@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>じゃんけんぽん ver. 3.0</title>
+</head>
+
+<body>
+  <section class="game">
+    <div class="score">
+      <div class="computer-score">
+        <h2>コンピューター</h2>
+        <p>0</p>
+      </div>
+      <div class="player-score">
+        <h2>プレイヤー</h2>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h1>認知症予防じゃんけん</h1>
+      <button>プレイ</button>
+    </div>
+
+    <div class="match fadeOut">
+      <h2 class="judgment">手を選んでください</h2>
+      <div class="hands">
+        <img class="computer-hand" src="./assets/rock.png" alt="コンピューターの手">
+        <img class="player-hand" src="./assets/rock.png" alt="プレーヤーの手">
+      </div>
+      <div class="options">
+        <button class="rock">グー<span>0</span></button>
+        <button class="paper">パー<span>0</span></button>
+        <button class="scissors">チョキ<span>0</span></button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
